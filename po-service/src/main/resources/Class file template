@@ -1,0 +1,10 @@
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+/**
+ *
+ * @apiNote     $description
+ * @author      Kotohiko
+ * @version     1.0
+ * @since       $DATE $TIME
+ **/
+public class ${NAME} {
+}
