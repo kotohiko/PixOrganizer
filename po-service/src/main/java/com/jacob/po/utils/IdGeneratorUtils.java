@@ -13,7 +13,7 @@ import java.util.Random;
  * @author Kotohiko
  * @version 1.0
  * @apiNote PixOrganizer ID generator
- * @since 11/21/2025 12:46 AM
+ * @since Nov 21, 2025, 12:46 AM
  **/
 public class IdGeneratorUtils {
 
@@ -34,37 +34,37 @@ public class IdGeneratorUtils {
 
     /**
      * Generates a random numeric ID for an "IP Tag".
-     * The ID is guaranteed to be within the range [1, 1000], inclusive.
+     * The ID is guaranteed to be within the range [1, 10000], inclusive.
      *
-     * @return A {@code String} representation of a random integer between 1 and 1000.
+     * @return A {@code String} representation of a random integer between 1 and 10000.
      */
     public static String getIpTagId() {
-        int randomNumber = RANDOM.nextInt(1000) + 1;
+        int randomNumber = RANDOM.nextInt(10_000) + 1;
         return String.valueOf(randomNumber);
     }
 
     /**
      * Generates a random numeric ID for a "Char Tag".
-     * The ID is guaranteed to be within the range [1001, 9999], inclusive.
+     * The ID is guaranteed to be within the range [10001, 99999], inclusive.
      *
-     * @return A {@code String} representation of a random integer between 1001 and 9999.
+     * @return A {@code String} representation of a random integer between 10001 and 99999.
      */
     public static String getCharTagId() {
-        int min = 1001;
-        int max = 9999;
+        int min = 10_001;
+        int max = 99_999;
         int randomNumber = RANDOM.nextInt(max - min + 1) + min;
         return String.valueOf(randomNumber);
     }
 
     /**
      * Generates a random numeric ID for a "General Tag".
-     * The ID is guaranteed to be within the range [10000, 99999], inclusive.
+     * The ID is guaranteed to be within the range [100000, 999999], inclusive.
      *
-     * @return A {@code String} representation of a random integer between 10000 and 99999.
+     * @return A {@code String} representation of a random integer between 100000 and 999999.
      */
     public static String getGeneralTagId() {
-        int min = 10000;
-        int max = 99999;
+        int min = 100_000;
+        int max = 999_999;
         int randomNumber = RANDOM.nextInt(max - min + 1) + min;
         return String.valueOf(randomNumber);
     }
